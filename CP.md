@@ -139,4 +139,25 @@ No fluxo normal para o posicionamento do arquivo diário, o Distribuidor:
 1. Até o dia 10 de cada mês (M), gera o arquivo com todas as movimentações somente do mês anterior (M-1);
 2. Copia o arquivo para a estrutura de pastas, dentro da pasta Consolidado do mês correspondente (ex.: 2013\02.Fevereiro\Consolidado\ZZZ.txt).
 
-_**Importante lembrar que "Os arquivos consolidados devem conter todas as movimentações Mês de Referência".**_
+_**Importante lembrar que "Os arquivos consolidados devem conter todas as movimentações do Mês de Referência".**_
+
+------
+
+#### Como substituir arquivo enviado erroneamente?
+
+O Distribuidor deve gerar um novo arquivo e copiá-lo para a pasta do mês correspondente. Caso se trate da sustituição de um arquivo consolidado, o Distribuidor
+deverá copiar o novo arquivo consolidado para a pasta Consolidado dentro da pasta do mês correspondente. O Distribuidor **não** deverá apagar o arquivo que deseja substituir,
+pois o sistema irá sempre considerar os dados do arquivo enviado por último e desprezar dados de qualquer outro arquivo anterior que se refira ao mesmo período.
+
+------
+
+#### Como corrigir valores de arquivos já enviados?
+
+Sempre que for preciso corrigir valores de dias anteriores, os quais já tiveram seus arquivos diários copiados para o Google Drive, o Distribuidor deverá informar todas
+as informações que continham no arquivo diário enviado e incluir as alterações que deseja que sejam feitas. Isso ocorre, pois cada arquivo enviado apaga todas as informações
+que haviam sido processadas. De forma que uma atualização não acontece de forma incremental, mas com reprocessamento completo do dia em questão.
+
+_Exemplo de um erro_:
+Considere o caso em que o Distribuidor precise, por exemplo, lançar um extorno de $500 na movimentação de um dia que já teve seu arquivo diário copiado para a pasta 
+no Google Drive. Se o distribuidor enviar um txt apenas com o valor do extorno, o saldo final daquele dia será -500, pois todos os valores que foram informados no 
+arquivo anterior serão desprezados e será considerado apenas o valor contido no novo arquivo, ou seja, -500.
