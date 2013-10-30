@@ -146,7 +146,9 @@ _**Importante lembrar que "Os arquivos consolidados devem conter todas as movime
 #### Como substituir arquivo enviado erroneamente?
 
 O Distribuidor deve gerar um novo arquivo e copiá-lo para a pasta do mês correspondente. Caso se trate da sustituição de um arquivo consolidado, o Distribuidor
-deverá copiar o novo arquivo consolidado para a pasta Consolidado dentro da pasta do mês correspondente. O Distribuidor **não** deverá apagar o arquivo que deseja substituir,
+deverá copiar o novo arquivo consolidado para a pasta Consolidado dentro da pasta do mês correspondente.
+
+O Distribuidor **não** deverá apagar o arquivo que deseja substituir,
 pois o sistema irá sempre considerar os dados do arquivo enviado por último e desprezar dados de qualquer outro arquivo anterior que se refira ao mesmo período.
 
 ------
