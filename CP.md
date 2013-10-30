@@ -54,7 +54,7 @@ Isto acontece, porque antes de inserir um arquivo diário X, que contém os dias
 ------
 
 ###### Domínio
-Um arquivo diário não deve conter informações de meses diferentes.
+Um arquivo diário **não** deve conter informações de meses diferentes.
 
 Isso significa dizer que, arquivos que contiverem movimentações de meses diferentes serão descartados.
 
@@ -72,7 +72,7 @@ Os arquivos serão considerados consolidados, quando alocados dentro da subpasta
 
 Cada mês deverá conter apenas um arquivo consolidado, entretanto, quando da necessidade de correção, um novo arquivo poderá ser posicionado na mesma pasta sem sobrescrever o arquivo antigo. O Sistema é inteligente o suficiente para processar o arquivo mais recente por último.
 
-**Não** serão considerados arquivos consolidados, aqueles posicionados em locais diferntes do especificado. Subpastas não devem ser criadas, pois os arquivos nelas contidos serão descartados.
+**Não** serão considerados arquivos consolidados, aqueles posicionados em locais diferentes do especificado. Subpastas não devem ser criadas, pois os arquivos nelas contidos serão descartados.
 
 
 ------
@@ -89,7 +89,7 @@ No exemplo dado...
             * **Consolidado**
                 * **ZZZZZZ.txt <----**
 
-... O _Mês de Referência_ do arquivo ZZZZZZ.txt, será **Fevereiro de 2013**.
+O _Mês de Referência_ do arquivo ZZZZZZ.txt, será **Fevereiro de 2013**.
 
 **Atenção** para o local onde o arquivo deve ser salvo, pois a carga de ~~cada~~ um arquivo Consolidado:
 * Apaga **toda** a movimentação do _Mês de Referência_; e depois
