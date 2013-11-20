@@ -163,3 +163,53 @@ _Exemplo de um erro_:
 Considere o caso em que o Distribuidor precise, por exemplo, lançar um extorno de $500 na movimentação de um dia que já teve seu arquivo diário copiado para a pasta 
 no Google Drive. Se o distribuidor enviar um txt apenas com o valor do extorno, o saldo final daquele dia será -500, pois todos os valores que foram informados no 
 arquivo anterior serão desprezados e será considerado apenas o valor contido no novo arquivo, ou seja, -500.
+
+------
+
+#### Uma linha com erro pode invalidar todo o arquivo?
+
+Sim. Uma linha com erro é suficiente para que todo o arquivo seja descartado.
+
+------
+
+#### Um arquivo que contém apenas dados de Sell Out ou apenas dados de Estoque é válido?
+
+Sim. Para que um arquivo seja processado, ele deve possuir ao menos registros de estoque ou registros de sell out.
+
+------
+
+#### Eu posso enviar um arquivo diário contendo Sell Out de uma data e Estoque de outra data?
+
+Sim. Desde que a data do sell out e a data do estoque estejam dentro do mês de referência.
+O mês de referência é sempre o da pasta onde o arquivo foi colocado. Ou seja, um arquivo postado
+na pasta DISTRIBUIDOR\2013\10.Outubro terá como mês de referência 201310 (Outubro de 2013). 
+Se o arquivo contiver valor de estoque do dia 09 de outubro e valor de sell out do dia 10 de outubro
+não haverá problema, mas caso qualquer um dos valores esteja fora do mês de referência, o arquivo
+será marcado como DESCARTAR por conter dias de outros meses.
+
+-------
+
+#### O que faz com que o arquivo seja classificado com erro?
+
+Um arquivo pode ser rejeitado por um dos motivos abaixo:
+
+**Captura em Local Inadequado** - Arquivo capturado em uma pasta fora da estrutura esperada. Espera-se que o arquivo esteja dentro da pasta *'Distribuidor/Ano/Mes'* (para arquivos diários) ou *'Distribuidor/Ano/Mes/Consolidado'* (para arquivos consolidados).
+
+**Contém Dias de Outro Mês** - A data de emissão do documento não pertence ao mês de referência. O mês de referência é sempre o da pasta onde o arquivo foi postado.
+                               Se por exemplo, o arquivo foi postado na pasta *'DISTRIBUIDOR/2013/10.Outubro'* o seu mês de referência será **201310**. Caso a data de emissão do 
+								       arquivo seja de outro mês que não outubro de 2013, este arquivo será classificado com este erro.
+
+**Erro de Estoque** -  Valor de Quantidade de Unidades (do Distribuidor) em estoque for inválido.
+
+**Erro de Sell Out** - Valor inválido em qualquer um dos campos abaixo:
+* Numero de linha do detalhe do documento
+* Quantidade de unidades
+* Valor faturado unitario. (Com Impostos, com descontos)
+* Valor Bruto unitario. (Com Impostos, sem descontos)
+* Valor do ICMS unitario
+
+**Sem Estoque e Sem Sell Out** - Arquivo postado não contém registro de estoque nem registro de sell out. Para que um arquivo seja processado, ele deve possuir ao menos registros de estoque ou registros de sell out.
+
+**Distribuidor Não Encontrado** - O arquivo foi postado em uma pasta de um distribuidor que não existe no cadastro de distribuidores.
+
+**Distribuidor Diferente** - O código de loja informado não pertence ao distribuidor.
