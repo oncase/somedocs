@@ -25,6 +25,12 @@ Incluir no ETL de Sinistros, as informações que não são multivaloradas, refe
 A principio, elas podem ficar na fato, mas deve-se estudar as melhores formas de se implementar isso.
 
 # 7. [Delphos] Incluir dimensões multivaloradas de MIP [ETL] [20h]
+
+## Subtarefas:
+
+- [Delphos] Incluir dimensões multivaloradas de MIP - EVENTO
+- [Delphos] Incluir dimensões multivaloradas de MIP - PAGAMENTOS 
+
 Incluir no ETL de Sinistros, as informações multivaloradas, referentes a MIP.
 A principio, elas podem ficar em tabelas-ponte [bridge], mas deve-se estudar as melhores formas de se implementar isso.
 
@@ -42,15 +48,23 @@ Poderíamos fazer operações matemáticas para dividir o VALOR_SINISTRO que pod
 
 
 # 7. [Delphos] Incluir dimensões multivaloradas de DFI [ETL] [20h]
-### [Delphos] Incluir dimensões multivaloradas de DFI - LAUDO DE VISTORIA INICIAL
-LAUDO DE VISTORIA ESPECIAL
-LAUDO TECNICO DO INSTITUTO
-LAUDO DE INSPEÇÃO DE OBRA
-RELATORIO DE VISTORIA COMPLEMENTAR
-ORÇAMENTO
-CONTRATO
-ADITIVO DO CONTRATO
-PAGAMENTO EM ESPECIE
+
+## Subtarefas:
+
+-  [Delphos] Incluir dimensões multivaloradas de DFI - LAUDO DE VISTORIA INICIAL
+-  [Delphos] Incluir dimensões multivaloradas de DFI - LAUDO DE VISTORIA ESPECIAL
+-  [Delphos] Incluir dimensões multivaloradas de DFI - LAUDO TECNICO DO INSTITUTO
+-  [Delphos] Incluir dimensões multivaloradas de DFI - LAUDO DE INSPEÇÃO DE OBRA
+-  [Delphos] Incluir dimensões multivaloradas de DFI - RELATORIO DE VISTORIA COMPLEMENTAR
+-  [Delphos] Incluir dimensões multivaloradas de DFI - ORÇAMENTO
+-  [Delphos] Incluir dimensões multivaloradas de DFI - CONTRATO
+-  [Delphos] Incluir dimensões multivaloradas de DFI - ADITIVO DO CONTRATO
+-  [Delphos] Incluir dimensões multivaloradas de DFI - PAGAMENTO EM ESPECIE
+-  [Delphos] Incluir dimensões multivaloradas de DFI - PAGAMENTO ENCARGO MENSAL
+-  [Delphos] Incluir dimensões multivaloradas de DFI - PAGAMENTO PERDA DE CONTEUDO
+-  [Delphos] Incluir dimensões multivaloradas de DFI - PAGAMENTO PARCELA DE OBRA
+-  [Delphos] Incluir dimensões multivaloradas de DFI - PAGAMENTO DESPESAS
+-  [Delphos] Incluir dimensões multivaloradas de DFI - EVENTO
 
 
 
@@ -72,19 +86,19 @@ Se eu quiser fazer uma analise filtrando pelo Laudo2, eu não terei o valor do s
 Poderíamos fazer operações matemáticas para dividir o VALOR_SINISTRO que poderia até permear todos os registros, mas temos que estudar a complexidade que seria adicionada ao desenvolvimento e à utilização.
 
 
-8. [Delphos] Inserir informações univaloradas de Sinistros - MIP [Criação do cubo] [2h]
+# 8. [Delphos] Inserir informações univaloradas de Sinistros - MIP [Criação do cubo] [2h]
 Inserir no schema xml do cubo, as informações univaloradas trazidas pela issue "[Delphos] Incluir dimensões univaloradas de MIP"
 As informações já devem conter - se informado pela Delphos - a organização proposta pelo cliente.
 
-9. [Delphos] Inserir informações univaloradas de Sinistros - DFI [Criação do cubo] [2h]
+# 9. [Delphos] Inserir informações univaloradas de Sinistros - DFI [Criação do cubo] [2h]
 Inserir no schema xml do cubo, as informações univaloradas trazidas pela issue "[Delphos] Incluir dimensões univaloradas de DFI"
 As informações já devem conter - se informado pela Delphos - a organização proposta pelo cliente.
 
-10. [Delphos] Inserir informações multivaloradas de Sinistros - DFI [Criação do cubo] [2h]
+# 10. [Delphos] Inserir informações multivaloradas de Sinistros - DFI [Criação do cubo] [2h]
 Inserir no schema xml do cubo, as informações multivaloradas trazidas pela issue "[Delphos] Incluir dimensões multivaloradas de DFI"
 As informações já devem conter - se informado pela Delphos - a organização proposta pelo cliente.
 
-11. [Delphos] Inserir informações multivaloradas de Sinistros - MIP [Criação do cubo] [2h]
+# 11. [Delphos] Inserir informações multivaloradas de Sinistros - MIP [Criação do cubo] [2h]
 Inserir no schema xml do cubo, as informações multivaloradas trazidas pela issue "[Delphos] Incluir dimensões multivaloradas de MIP"
 As informações já devem conter - se informado pela Delphos - a organização proposta pelo cliente.
 
