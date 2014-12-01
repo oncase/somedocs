@@ -26,7 +26,7 @@ A principio, elas podem ficar na fato, mas deve-se estudar as melhores formas de
 
 # 7. [Delphos] Incluir dimensões multivaloradas de MIP [ETL] [20h]
 
-## Subtarefas:
+## Subtarefas [3 pontos cada]:
 
 - [Delphos] Incluir dimensões multivaloradas de MIP - EVENTO
 - [Delphos] Incluir dimensões multivaloradas de MIP - PAGAMENTOS 
@@ -49,7 +49,7 @@ Poderíamos fazer operações matemáticas para dividir o VALOR_SINISTRO que pod
 
 # 7. [Delphos] Incluir dimensões multivaloradas de DFI [ETL] [20h]
 
-## Subtarefas:
+## Subtarefas [3 pontos cada]:
 
 -  [Delphos] Incluir dimensões multivaloradas de DFI - LAUDO DE VISTORIA INICIAL
 -  [Delphos] Incluir dimensões multivaloradas de DFI - LAUDO DE VISTORIA ESPECIAL
@@ -86,19 +86,19 @@ Se eu quiser fazer uma analise filtrando pelo Laudo2, eu não terei o valor do s
 Poderíamos fazer operações matemáticas para dividir o VALOR_SINISTRO que poderia até permear todos os registros, mas temos que estudar a complexidade que seria adicionada ao desenvolvimento e à utilização.
 
 
-# 8. [Delphos] Inserir informações univaloradas de Sinistros - MIP [Criação do cubo] [2h]
+# 8. [Delphos] Inserir informações univaloradas de Sinistros - MIP [Criação do cubo] [2h] [3 pontos]
 Inserir no schema xml do cubo, as informações univaloradas trazidas pela issue "[Delphos] Incluir dimensões univaloradas de MIP"
 As informações já devem conter - se informado pela Delphos - a organização proposta pelo cliente.
 
-# 9. [Delphos] Inserir informações univaloradas de Sinistros - DFI [Criação do cubo] [2h]
+# 9. [Delphos] Inserir informações univaloradas de Sinistros - DFI [Criação do cubo] [2h] [3 pontos]
 Inserir no schema xml do cubo, as informações univaloradas trazidas pela issue "[Delphos] Incluir dimensões univaloradas de DFI"
 As informações já devem conter - se informado pela Delphos - a organização proposta pelo cliente.
 
-# 10. [Delphos] Inserir informações multivaloradas de Sinistros - DFI [Criação do cubo] [2h]
+# 10. [Delphos] Inserir informações multivaloradas de Sinistros - DFI [Criação do cubo] [2h] [3 pontos]
 Inserir no schema xml do cubo, as informações multivaloradas trazidas pela issue "[Delphos] Incluir dimensões multivaloradas de DFI"
 As informações já devem conter - se informado pela Delphos - a organização proposta pelo cliente.
 
-# 11. [Delphos] Inserir informações multivaloradas de Sinistros - MIP [Criação do cubo] [2h]
+# 11. [Delphos] Inserir informações multivaloradas de Sinistros - MIP [Criação do cubo] [2h] [3 pontos]
 Inserir no schema xml do cubo, as informações multivaloradas trazidas pela issue "[Delphos] Incluir dimensões multivaloradas de MIP"
 As informações já devem conter - se informado pela Delphos - a organização proposta pelo cliente.
 
